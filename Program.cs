@@ -26,22 +26,33 @@
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8
 
-// Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+// Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
 
-// a = 5; b = 7 -> max = 7
-// a = 2 b = 10 -> max = 10
-// a = -9 b = -3 -> max = -3
+// 2, 3, 7 -> 7
+// 44 5 78 -> 78
+// 22 3 9 -> 22
 
 Console.WriteLine("Ввести значение: ");
 
 int number = Convert.ToInt32(Console.ReadLine());
 int number1 = Convert.ToInt32(Console.ReadLine());
+int number2 = Convert.ToInt32(Console.ReadLine());
+int max = 0;
+
 
 if (number > number1)
 {
-    Console.WriteLine(number);
+    max = number;
 }
 else
 {
-    Console.WriteLine(number1);
+    max = number1;
+}
+if (max > number2)
+{
+    Console.WriteLine(max);
+}
+else
+{
+    Console.WriteLine(number2);
 }
